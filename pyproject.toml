@@ -4,10 +4,12 @@ version = "0.1.0"
 description = "A lightweight, extensible Python-first Code Agent framework for code generation, execution, and tooling with LLMs."
 readme = "README.md"
 requires-python = ">=3.10"
-dependencies = []
-
-[tool.setuptools.packages.find]
-where = ["src"]
+dependencies = [
+    "anthropic>=0.97.0",
+    "pydantic-ai>=1.86.1",
+    "python-dotenv>=1.2.2",
+    "textual>=8.2.4",
+]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
@@ -19,3 +21,6 @@ python_functions = ["test_*"]
 dev = [
     "pytest>=9.0.3",
 ]
+
+[project.scripts]
+pyto-code = "pyto_code.__main__:main"

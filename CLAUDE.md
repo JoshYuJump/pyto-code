@@ -14,6 +14,7 @@ This is a new project with minimal initial structure. The framework architecture
 - Include proper type hints and docstrings
 - Add tests using pytest
 - Use a modern Python project structure (pyproject.toml recommended)
+- Use `uv` as the Python package manager
 
 ## Future Reference
 
